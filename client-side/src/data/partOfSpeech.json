@@ -1,0 +1,64 @@
+{
+    "parts_of_speech": [
+        {
+            "key": "noun",
+            "korean": "명사",
+            "romanization": "myeong-sa",
+            "description_en": "Names of people, places, things, or concepts"
+        },
+        {
+            "key": "verb",
+            "korean": "동사",
+            "romanization": "dong-sa",
+            "description_en": "Words that describe actions or states"
+        },
+        {
+            "key": "adjective",
+            "korean": "형용사",
+            "romanization": "hyeong-yong-sa",
+            "description_en": "Words that describe qualities or states"
+        },
+        {
+            "key": "pronoun",
+            "korean": "대명사",
+            "romanization": "dae-myeong-sa",
+            "description_en": "Words that replace nouns"
+        },
+        {
+            "key": "adverb",
+            "korean": "부사",
+            "romanization": "bu-sa",
+            "description_en": "Words that modify verbs, adjectives, or sentences"
+        },
+        {
+            "key": "ending",
+            "korean": "어미",
+            "romanization": "eom-i",
+            "description_en": "Verb or adjective endings showing tense, mood, or politeness"
+        },
+        {
+            "key": "particle",
+            "korean": "조사",
+            "romanization": "jo-sa",
+            "description_en": "Postpositions attached to nouns to show grammatical role"
+        },
+        {
+            "key": "determiner",
+            "korean": "관형사",
+            "romanization": "gwan-hyeong-sa",
+            "description_en": "Words that modify nouns directly"
+        },
+        {
+            "key": "interjection",
+            "korean": "감탄사",
+            "romanization": "gam-tan-sa",
+            "description_en": "Exclamations expressing emotion or reaction"
+        },
+        {
+            "key": "numeral",
+            "korean": "수사",
+            "romanization": "su-sa",
+            "description_en": "Numbers and counting words"
+        }
+    ]
+}

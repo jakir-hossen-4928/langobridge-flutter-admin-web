@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Langobridge Design System - Korean-Bangladeshi Fusion Theme */
+
+@layer base {
+  :root {
+    /* Korean Blue - Primary (Trust, Calm) */
+    --primary: 214 100% 31%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Bangladeshi Green - Secondary (Fresh, Growth) */
+    --secondary: 160 100% 22%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Blended Red - Accent (Energy, Passion) */
+    --accent: 355 79% 57%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Background & Surface */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 0%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    /* Muted */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    
+    /* Status Colors */
+    --destructive: 355 79% 57%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 122 39% 49%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Borders & Inputs */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 214 100% 31%;
+    
+    --radius: 0.75rem;
+    
+    /* Sidebar */
+    --sidebar-background: 214 100% 31%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 214 100% 31%;
+    --sidebar-accent: 214 100% 26%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 214 100% 36%;
+    --sidebar-ring: 0 0% 100%;
+    
+    /* Custom Gradients */
+    --gradient-korean: linear-gradient(135deg, hsl(214 100% 31%), hsl(214 100% 21%));
+    --gradient-bangladeshi: linear-gradient(135deg, hsl(160 100% 22%), hsl(160 100% 15%));
+    --gradient-fusion: linear-gradient(135deg, hsl(214 100% 31%), hsl(160 100% 22%));
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 214 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 160 100% 30%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 73%;
+    
+    --accent: 355 79% 57%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 355 79% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 214 100% 45%;
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 214 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 214 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Bengali', 'Noto Sans KR', sans-serif;
+  }
+  
+  /* Korean text styling */
+  .font-korean {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  /* Bangla text styling */
+  .font-bangla {
+    font-family: 'Noto Sans Bengali', sans-serif;
+  }
+
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/30 transition-colors;
+  }
+}
